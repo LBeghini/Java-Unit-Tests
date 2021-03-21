@@ -5,9 +5,9 @@ public class IMC {
     private double weight;
     private Gender gender;
 
-    public IMC(double height, double weigh, Gender gender){
+    public IMC(double height, double weight, Gender gender){
         this.height = height;
-        this.weight = weigh;
+        this.weight = weight;
         this.gender = gender;
     }
 
