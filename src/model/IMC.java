@@ -40,7 +40,7 @@ public class IMC {
                 return("marginalmente acima do peso");              //16
             }else if(IMC < 31.1){                                   //17
                 return("acima do peso ideal");                      //18
-            }else{                                                  //10
+            }else{
                 return("obeso");                                    //19
             }
         }                                                           //20
