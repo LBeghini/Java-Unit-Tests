@@ -1,19 +1,11 @@
 package model;
 
 public enum Gender {
-    FEMALE("f", "F"),
-    MALE("m", "M");
-
-    private String lower;
-    private String upper;
-
-    Gender(String lower, String upper) {
-        this.lower = lower;
-        this.upper = upper;
-    }
+    FEMALE,
+    MALE;
 
     public static Gender evaluate(String value){
-        if(value.equals("F") || value.equals("f")){
+        if(value.equalsIgnoreCase("f")){
             return Gender.FEMALE;
         }else if(value.equals("M") || value.equals("m")){
             return Gender.MALE;
