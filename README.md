@@ -19,15 +19,11 @@ git clone https://github.com/LBeghini/Java-Unit-Tests.git
 ## Running
 To see the project running, follow the steps:
 
-### Compile
-
-Go to `src` folder and run:
+First you need to compile. Go to `src` folder and run:
 ```
 javac Main.java
 ```
-
-### Run
-
+Then, run:
 ```
 java Main
 ```
