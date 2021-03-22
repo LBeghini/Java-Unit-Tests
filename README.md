@@ -49,7 +49,7 @@ To determine the number of test cases, it's needed to count the areas of the gra
 ### Determine Test Cases
 From the analysis of the Ciclomatic Complexity, the test cases are determined:
 
-|             | Gender  | Weight   |  Height | IMC  | Result                      |Path                  |
+|             | Gender  | Weight   |  Height | BMI  | Result                      |Path                  |
 |  :-------:  | :-----: | :-------:| :-----: |:---: | :-----                      | :-----               |
 | **1**       | FEMALE  | 19.0     | 1       | 19.0 | abaixo do peso              | 1-2-3-20             |
 | **2**       | FEMALE  | 19.1     | 1       | 19.1 | no peso normal              | 1-2-4-5-20           |
