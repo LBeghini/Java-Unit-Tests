@@ -1,7 +1,7 @@
 # :coffee: Java Unit Tests
 
 ## About
-This application is a simple Java Console Application that aims to implement a base code that calculates BMI: Body Mass Index to apply unit tests in JUnit.
+This application is a simple Java Console Application that aims to implement a base code that calculates BMI (Body Mass Index) to apply unit tests in JUnit.
 
 ## Technologies
 - Java 15
@@ -10,7 +10,7 @@ This application is a simple Java Console Application that aims to implement a b
 ## Defining the tests
 
 ### Enumerate conditions and command blocks
-From the main function that calculates the IMC, each command block and condition was enumerated:
+From the main function that calculates the BMI, each command block and condition was enumerated:
 
 ```java
 if(this.gender == Gender.FEMALE){                           //1
