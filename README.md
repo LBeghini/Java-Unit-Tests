@@ -51,7 +51,7 @@ From the analysis of the Ciclomatic Complexity, the test cases are determined:
 
 |             | Gender  | Weight   |  Height | IMC  | Result                      |Path                  |
 |  :-------:  | :-----: | :-------:| :-----: |:---: | :-----                      | :-----               |
-| **1**       | FEMALE  | 19.1     | 1       | 19.0 | abaixo do peso              | 1-2-3-20             |
+| **1**       | FEMALE  | 19.0     | 1       | 19.0 | abaixo do peso              | 1-2-3-20             |
 | **2**       | FEMALE  | 19.1     | 1       | 19.1 | no peso normal              | 1-2-4-5-20           |
 | **3**       | FEMALE  | 25.8     | 1       | 25.8 | marginalmente acima do peso | 1-2-4-6-7-20         |
 | **4**       | FEMALE  | 27.3     | 1       | 27.3 | acima do peso ideal         | 1-2-4-6-8-9-20       |
