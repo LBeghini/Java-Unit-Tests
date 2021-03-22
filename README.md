@@ -1,11 +1,11 @@
 # :coffee: Java Unit Tests
 
 ## About
-This application is a simple Java Console Application that aims to implement a base code that calculates IMC: Índice de Massa Corporal (body mass index) to apply unit tests in JUnit.
+This application is a simple Java Console Application that aims to implement a base code that calculates BMI: Body Mass Index to apply unit tests in JUnit.
 
 ## Technologies
-- Java
-- JUnit
+- Java 15
+- JUnit 5.4.2
 
 ## Defining the tests
 
@@ -49,9 +49,9 @@ To determine the number of test cases, it's needed to count the areas of the gra
 ### Determine Test Cases
 From the analysis of the Ciclomatic Complexity, the test cases are determined:
 
-|             | Gender  | Weight   |  Height | IMC  | Result                      |Path                  |
+|             | Gender  | Weight   |  Height | BMI  | Result                      |Path                  |
 |  :-------:  | :-----: | :-------:| :-----: |:---: | :-----                      | :-----               |
-| **1**       | FEMALE  | 19.1     | 1       | 19.0 | abaixo do peso              | 1-2-3-20             |
+| **1**       | FEMALE  | 19.0     | 1       | 19.0 | abaixo do peso              | 1-2-3-20             |
 | **2**       | FEMALE  | 19.1     | 1       | 19.1 | no peso normal              | 1-2-4-5-20           |
 | **3**       | FEMALE  | 25.8     | 1       | 25.8 | marginalmente acima do peso | 1-2-4-6-7-20         |
 | **4**       | FEMALE  | 27.3     | 1       | 27.3 | acima do peso ideal         | 1-2-4-6-8-9-20       |
@@ -71,14 +71,5 @@ After that, you'll need to clone this repo:
 ```
 git clone https://github.com/LBeghini/Java-Unit-Tests.git
 ```
-## Running
-To see the project running, follow the steps:
-
-First you need to compile. Go to `src` folder and run:
-```
-javac Main.java
-```
-Then, run:
-```
-java Main
-```
+## :balance_scale: License
+[MIT License](https://github.com/LBeghini/Java-Unit-Tests/blob/main/LICENSE)
