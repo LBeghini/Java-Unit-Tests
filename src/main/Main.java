@@ -1,7 +1,5 @@
 package main;
 
-import main.model.IMC;
-import main.model.Gender;
 import java.util.Scanner;
 
 

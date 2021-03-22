@@ -1,4 +1,4 @@
-package main.model;
+package main;
 
 public enum Gender {
     FEMALE,
