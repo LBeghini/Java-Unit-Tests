@@ -22,7 +22,7 @@ And the results are analised with the following conditions:
 
 ## Technologies
 - Java 15
-- JUnit 5.4.2
+- JUnit 4.12
 
 ## Defining the tests
 
