@@ -1,9 +1,9 @@
 package main;
 
 public class IMC {
-    private final double height;
-    private final double weight;
-    private final Gender gender;
+    private double height;
+    private double weight;
+    private Gender gender;
 
     public IMC(double height, double weight, Gender gender){
         this.height = height;
@@ -11,8 +11,36 @@ public class IMC {
         this.gender = gender;
     }
 
+    public IMC(){
+
+    }
+
     public double calculate(){
         return this.weight / this.height * this.height;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public String condition(){
