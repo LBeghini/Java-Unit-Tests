@@ -45,31 +45,31 @@ public class BodyMassIndex {
 
     public String condition(){
 
-        double IMC = this.calculate();
+        double BMI = this.calculate();
 
         if(this.gender == Gender.FEMALE){                           //1
-            if(IMC < 19.1){                                         //2
-                return("abaixo do peso");                           //3
-            }else if(IMC < 25.8){                                   //4
-                return("no peso normal");                           //5
-            }else if(IMC < 27.3){                                   //6
-                return("marginalmente acima do peso");              //7
-            }else if(IMC < 32.3){                                   //8
-                return("acima do peso ideal");                      //9
+            if(BMI < 19.1){                                         //2
+                return("underweight");                              //3
+            }else if(BMI < 25.8){                                   //4
+                return("normal");                                   //5
+            }else if(BMI < 27.3){                                   //6
+                return("slightly overweight");                      //7
+            }else if(BMI < 32.3){                                   //8
+                return("overweight");                               //9
             }else{
-                return("obeso");                                    //10
+                return("obese");                                    //10
             }
         }else{
-            if(IMC < 20.7){                                         //11
-                return("abaixo do peso");                           //12
-            }else if(IMC < 26.4){                                   //13
-                return("no peso normal");                           //14
-            }else if(IMC < 27.8){                                   //15
-                return("marginalmente acima do peso");              //16
-            }else if(IMC < 31.1){                                   //17
-                return("acima do peso ideal");                      //18
+            if(BMI < 20.7){                                         //11
+                return("underweight");                              //12
+            }else if(BMI < 26.4){                                   //13
+                return("normal");                                   //14
+            }else if(BMI < 27.8){                                   //15
+                return("slightly overweight");                      //16
+            }else if(BMI < 31.1){                                   //17
+                return("overweight");                               //18
             }else{
-                return("obeso");                                    //19
+                return("obese");                                    //19
             }
         }                                                           //20
     }

@@ -19,82 +19,82 @@ class BodyMassIndexTest {
     }
 
     @Test
-    void testConditionFemaleAbaixoDoPeso() {
+    void testConditionFemaleUnderweight() {
         bmi.setHeight(1);
         bmi.setWeight(19.0);
         bmi.setGender(Gender.FEMALE);
-        assertEquals("abaixo do peso", bmi.condition());
+        assertEquals("underweight", bmi.condition());
     }
 
     @Test
-    void testConditionFemalePesoNormal() {
+    void testConditionFemaleNormal() {
         bmi.setHeight(1);
         bmi.setWeight(19.1);
         bmi.setGender(Gender.FEMALE);
-        assertEquals("no peso normal", bmi.condition());
+        assertEquals("normal", bmi.condition());
     }
 
     @Test
-    void testConditionFemaleMarginalmenteAcima() {
+    void testConditionFemaleSlightlyOverweight() {
         bmi.setHeight(1);
         bmi.setWeight(25.8);
         bmi.setGender(Gender.FEMALE);
-        assertEquals("marginalmente acima do peso", bmi.condition());
+        assertEquals("slightly overweight", bmi.condition());
     }
 
     @Test
-    void testConditionFemaleAcima() {
+    void testConditionFemaleOverweight() {
         bmi.setHeight(1);
         bmi.setWeight(27.3);
         bmi.setGender(Gender.FEMALE);
-        assertEquals("acima do peso ideal", bmi.condition());
+        assertEquals("overweight", bmi.condition());
     }
 
     @Test
-    void testConditionFemaleObeso() {
+    void testConditionFemaleObese() {
         bmi.setHeight(1);
         bmi.setWeight(32.3);
         bmi.setGender(Gender.FEMALE);
-        assertEquals("obeso", bmi.condition());
+        assertEquals("obese", bmi.condition());
     }
 
     @Test
-    void testConditionMaleAbaixoDoPeso() {
+    void testConditionMaleUnderweight() {
         bmi.setHeight(1);
         bmi.setWeight(20.6);
         bmi.setGender(Gender.MALE);
-        assertEquals("abaixo do peso", bmi.condition());
+        assertEquals("underweight", bmi.condition());
     }
 
     @Test
-    void testConditionMalePesoNormal() {
+    void testConditionMaleNormal() {
         bmi.setHeight(1);
         bmi.setWeight(20.7);
         bmi.setGender(Gender.MALE);
-        assertEquals("no peso normal", bmi.condition());
+        assertEquals("normal", bmi.condition());
     }
 
     @Test
-    void testConditionMaleMarginalmenteAcima() {
+    void testConditionMaleSlightlyOverweight() {
         bmi.setHeight(1);
         bmi.setWeight(26.4);
         bmi.setGender(Gender.MALE);
-        assertEquals("marginalmente acima do peso", bmi.condition());
+        assertEquals("slightly overweight", bmi.condition());
     }
 
     @Test
-    void testConditionMaleAcima() {
+    void testConditionMaleOverweight() {
         bmi.setHeight(1);
         bmi.setWeight(27.8);
         bmi.setGender(Gender.MALE);
-        assertEquals("acima do peso ideal", bmi.condition());
+        assertEquals("overweight", bmi.condition());
     }
 
     @Test
-    void testConditionMaleObeso() {
+    void testConditionMaleObese() {
         bmi.setHeight(1);
         bmi.setWeight(31.1);
         bmi.setGender(Gender.MALE);
-        assertEquals("obeso", bmi.condition());
+        assertEquals("obese", bmi.condition());
     }
 }
