@@ -1,17 +1,17 @@
 package main;
 
-public class IMC {
+public class BodyMassIndex {
     private double height;
     private double weight;
     private Gender gender;
 
-    public IMC(double height, double weight, Gender gender){
+    public BodyMassIndex(double height, double weight, Gender gender){
         this.height = height;
         this.weight = weight;
         this.gender = gender;
     }
 
-    public IMC(){
+    public BodyMassIndex(){
 
     }
 

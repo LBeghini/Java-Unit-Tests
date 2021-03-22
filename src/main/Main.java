@@ -18,9 +18,9 @@ public class Main {
         System.out.println("Enter gender (f | m): ");
         String gender = scanner.next();
 
-        IMC imc = new IMC(height, weight, Gender.evaluate(gender) );
+        BodyMassIndex bmi = new BodyMassIndex(height, weight, Gender.evaluate(gender));
 
-        System.out.println(imc.condition());
+        System.out.println(bmi.condition());
 
     }
 }
