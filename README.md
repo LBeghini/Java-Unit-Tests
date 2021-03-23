@@ -54,7 +54,7 @@ if(this.gender == Gender.FEMALE){                           //1
     }else{                                                  
         return("obese");                                    //19
     }
-}                                                           //20>
+}                                                           //20
 ```
 ### Ciclomatic Complexity Graph
 From the enumerations, the ciclomatic complexity graph follows:
@@ -67,7 +67,7 @@ To determine the number of test cases, it's needed to count the areas of the gra
 From the analysis of the Ciclomatic Complexity, the test cases are determined:
 
 |             | Gender               | Weight   |  Height | BMI  | Result                      |Path                  |
-|  :-------:  | :-----:              | :-------:| :-----: |:---: | :-----                      | :-----               |
+|  :-------:  | :-----              | :-------:| :-----: |:---: | :-----                      | :-----               |
 | **1**       | :female_sign: FEMALE | 19.0     | 1       | 19.0 | underweight                 | 1-2-3-20             |
 | **2**       | :female_sign: FEMALE | 19.1     | 1       | 19.1 | normal                      | 1-2-4-5-20           |
 | **3**       | :female_sign: FEMALE | 25.8     | 1       | 25.8 | slightly overweight         | 1-2-4-6-7-20         |
@@ -81,12 +81,58 @@ From the analysis of the Ciclomatic Complexity, the test cases are determined:
 
 ## Requirements
 To run and edit the project, be sure to have installed in your computer the following softwares:
-- Java
+- [Java Development Kit 15](https://www.oracle.com/br/java/technologies/javase-jdk15-downloads.html)
+- [JUnit 4.12](https://mvnrepository.com/artifact/junit/junit/4.12)
+- [Hamcrest Core 1.3](https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3)
 - A code editor
 
 After that, you'll need to clone this repo:
 ```
 git clone https://github.com/LBeghini/Java-Unit-Tests.git
 ```
+
+## Project Structure
+In order to run the exact commands to compile and run the project, be sure to have the exact following project structure:
+
+```
+Java-Unit-Tests
+└── 🗀 lib
+|   |   hamcrest-core-1.3.jar
+|   |   junit-4.12.jar
+│   🗀 out
+│   🗀 resources
+└───🗀 src
+│   └───🗀 main
+        |   BodyMassIndex
+        |   Gender
+        |   Main
+│   └───🗀 test
+        |   BodyMassIndexTest
+```
+
+## How to run
+
+### Compile
+
+Go to `Java-Unit-Tests/out`, and run
+```
+javac -d . ../src/main/*.java
+```
+to compile the main project, and
+```
+javac -d . -cp 'main/*;../lib/junit-4.12.jar;'  ../src/test/*.java
+```
+to compile the tests.
+
+### Run application
+```
+java main.Main
+```
+
+### Run tests
+```
+java -cp '..\lib\junit-4.12.jar;..\lib\hamcrest-core-1.3.jar;.' org.junit.runner.JUnitCore test.BodyMassIndex
+```
+
 ## :balance_scale: License
 [MIT License](https://github.com/LBeghini/Java-Unit-Tests/blob/main/LICENSE)
