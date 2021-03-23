@@ -97,17 +97,17 @@ In order to run the exact commands to compile and run the project, be sure to ha
 ```
 Java-Unit-Tests
 └── 🗀 lib
-|   |   hamcrest-core-1.3.jar
-|   |   junit-4.12.jar
+|   |     hamcrest-core-1.3.jar
+|   |     junit-4.12.jar
 │   🗀 out
 │   🗀 resources
 └───🗀 src
 │   └───🗀 main
-        |   BodyMassIndex
-        |   Gender
-        |   Main
+|       |   BodyMassIndex
+|       |   Gender
+|       |   Main
 │   └───🗀 test
-        |   BodyMassIndexTest
+|       |   BodyMassIndexTest
 ```
 
 ## How to run
