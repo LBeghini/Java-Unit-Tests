@@ -1,13 +1,14 @@
 package test;
 
-import main.BodyMassIndex;
-import main.Gender;
+import main.*;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class BodyMassIndexTest {    BodyMassIndex bmi;
+public class BodyMassIndexTest {
+
+    BodyMassIndex bmi;
 
     @Before
     public void setUp() throws Exception {
