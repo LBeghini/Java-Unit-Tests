@@ -56,7 +56,7 @@ if(this.gender == Gender.FEMALE){                           //1
     }
 }                                                           //20
 ```
-### Ciclomatic Complexity Graph
+### Cyclomatic Complexity Graph
 From the enumerations, the ciclomatic complexity graph follows:
 
 <img src="https://github.com/LBeghini/Java-Unit-Tests/blob/main/resources/IMC_Complexity.png" width='900px'>
